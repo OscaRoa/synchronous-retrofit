@@ -30,13 +30,12 @@ public class Main{
 	public static void openInBrowser(String url){
 		if(Desktop.isDesktopSupported()){
 			try {
-                Desktop.getDesktop().browse(new URI(url));
+          Desktop.getDesktop().browse(new URI(url));
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             } catch(IOException e){
                 e.printStackTrace();
             }
-			
 		}
 	}
 }
