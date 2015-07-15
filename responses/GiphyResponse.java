@@ -6,10 +6,10 @@ import responses.Gif;
 public class GiphyResponse{
 	private ArrayList<Gif> data;
 
-	public void setData(ArrayList<Gif> data){
+	public GiphyResponse(){
 		this.data = data;
 	}
 	public ArrayList<Gif> getData(){
-		return data;
+		return this.data;
 	}
 }

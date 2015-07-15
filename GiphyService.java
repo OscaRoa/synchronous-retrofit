@@ -17,20 +17,6 @@ public class GiphyService {
 		);
 	}
 
-	public void setAdapter(RestAdapter adapter){
-		this.adapter = adapter;
-	}
-	public String getAdapter(){
-		return this.adapter;
-	}
-
-	public void setService(RestAdapter service){
-		this.service = service;
-	}
-	public String getService(){
-		return this.service;
-	}
-
 	public GiphyService(){
 		adapter = new RestAdapter.Builder()
 			.setEndpoint(Constants.GIPHY_ENDPOINT)
