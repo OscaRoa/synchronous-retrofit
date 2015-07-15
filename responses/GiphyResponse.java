@@ -11,8 +11,12 @@ public class GiphyResponse{
 	public GiphyResponse(){
 		this.data = data;
 	}
-	public ArrayList<Gif> getData(){
+	public ArrayList<Gif> getRandomData(){
 		Collections.shuffle(data);
+		return data;
+	}
+
+	public ArrayList<Gif> getData(){
 		return data;
 	}
 }

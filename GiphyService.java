@@ -29,4 +29,8 @@ public class GiphyService {
 	public GiphyResponse searchGifs(String term){
 		return service.search(Constants.GIPHY_KEY, term);
 	}
+
+	public GiphyResponse searchRandomGifs(String term){
+		return service.search(Constants.GIPHY_KEY, term);
+	}
 }
