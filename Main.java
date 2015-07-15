@@ -7,10 +7,15 @@ import java.net.URI;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Main{
 	public static void main(String[] args) {
-			Main.searchGifs("hackerz", 1);
+		int cantidad = 1;
+		String busqueda = JOptionPane.showInputDialog("Gifs chidos de:");
+		String numero = JOptionPane.showInputDialog("¿Cuántos?");
+		cantidad = Integer.parseInt(numero);
+		Main.searchGifs(busqueda, cantidad);
 	}
 
 	public static void searchGifs(String term, int numImages){
@@ -18,7 +23,6 @@ public class Main{
 
 		GiphyResponse gifs = service.searchGifs(term);
 		int i = 0;
-
 		for (Gif gif : gifs.getData()) {
 			i++;
 			if(i <= numImages){

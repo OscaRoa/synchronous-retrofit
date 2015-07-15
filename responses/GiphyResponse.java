@@ -2,6 +2,8 @@ package responses;
 
 import java.util.ArrayList;
 import responses.Gif;
+import java.util.Random;
+import java.util.*;
 
 public class GiphyResponse{
 	private ArrayList<Gif> data;
@@ -10,6 +12,7 @@ public class GiphyResponse{
 		this.data = data;
 	}
 	public ArrayList<Gif> getData(){
-		return this.data;
+		Collections.shuffle(data);
+		return data;
 	}
 }

@@ -28,8 +28,4 @@ public class GiphyImage{
 	}
 
 	public FixedHeight fixed_height;
-
-	/*public FixedHeight getFixedHeight(){
-		return this.fixed_height;
-	}*/
 }
