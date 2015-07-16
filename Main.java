@@ -35,7 +35,7 @@ public class Main{
 		for (Gif gif : gifs.getData()) {
 			i++;
 			if(i <= numImages){
-				Main.openInBrowser(gif.getImages().fixed_height.url);
+				Main.openInBrowser(gif.getImages().fixed_height.getUrl());
 			}
 		}
 	}
@@ -48,7 +48,7 @@ public class Main{
 		for (Gif gif : gifs.getRandomData()) {
 			i++;
 			if(i <= numImages){
-				Main.openInBrowser(gif.getImages().fixed_height.url);
+				Main.openInBrowser(gif.getImages().fixed_height.getUrl());
 			}
 		}
 	}

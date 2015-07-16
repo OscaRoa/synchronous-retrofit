@@ -2,7 +2,7 @@ package responses;
 
 public class GiphyImage{
 	public class FixedHeight{
-		public String url;
+		private String url;
 		private String width;
 		private String height;
 
@@ -24,6 +24,13 @@ public class GiphyImage{
 		}
 		public String getHeight(){
 			return this.height;
+		}
+
+		public void setUrl(String url){
+			this.url = url;
+		}
+		public String getUrl(){
+			return this.url;
 		}
 	}
 
